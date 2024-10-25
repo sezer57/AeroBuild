@@ -1,0 +1,10 @@
+# Python
+*.pyc
+
+# Django
+backend/AeroBuilAPI/db.sqlite3
+backend/env/
+
+# VSCode
+.vscode/
+

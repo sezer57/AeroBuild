@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ön Yüz Geliştirme</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/register.js?v=1.0"></script>
+    <script src="/js/global.js?v=1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+
+</head>
+
+<body>
+
+    <main id="main">
+        <div class="py-3 py-md-5 bsb-demo-bg-blue border-0 border-bottom bsb-demo-border-blue-subtle">
+            <div class="container">
+                <div class="row justify-content-md-center">
+
+                    <div class="col-12 col-md-10 col-lg-8 col-xl-7X col-xxl-6X">
+                        <p class="text-2xl text-center">AeroBuild Portal</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-light py-3 py-md-5">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-12 col-md-11 col-lg-8 col-xl-7 col-xxl-6">
+                        <div class="bg-white p-4 p-md-5 rounded shadow-sm">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="mb-5">
+                                        <h2>Kayıt Ol</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="#!">
+                                <div class="row gy-4 gy-md-4 overflow-hidden">
+                                    <div class="col-12">
+                                        <label for="first_name" class="form-label mt-2">İsim <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" name="first_name" id="first_name"
+                                            placeholder="İsim" required="">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="last_name" class="form-label mt-2">Soyadı <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" name="last_name" id="last_name"
+                                            placeholder="Soyadı" required="">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="email" class="form-label mt-2">E-posta <span
+                                                class="text-danger">*</span></label>
+                                        <input type="email" class="form-control" name="email" id="email"
+                                            placeholder="name@example.com" required="">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="password" class="form-label mt-2">Şifre <span
+                                                class="text-danger">*</span></label>
+                                        <input type="password" class="form-control" name="password" id="password"
+                                            value="" required="">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="teamType" class="form-label  mt-4">Takım Seç <span
+                                                class="text-danger">*</span>
+                                            <div class="input-group mt-4">
+                                                <select id="teamType"
+                                                    class="form-select form-select-lg border border border-2  rounded mb-3"
+                                                    aria-label=".form-select-lg Takım Seç">
+
+                                                </select>
+                                            </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-grid">
+                                            <button class="btn btn-lg btn-primary mt-4" type="button"
+                                                onclick="register()">Kayıt Ol</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="row">
+                                <div class="col-12">
+                                    <hr class="mt-5 mb-4 border-secondary-subtle">
+                                    <div class="d-flex gap-2 gap-md-4 flex-column flex-md-row justify-content-md-end">
+                                        <a href="/login.html" class="link-secondary text-decoration-none">Giriş Yap</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-3 py-md-5 ">
+            <div class="container">
+                <div class="d-flex justify-content-md-center">
+                    <div class="d-grid">
+                        <a href="/login.html" target="_parent" class="btn btn-lg btn-primary"
+                            style="text-decoration: none; color: white;">
+                            Giriş Yap
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

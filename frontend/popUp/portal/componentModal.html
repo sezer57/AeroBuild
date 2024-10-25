@@ -1,0 +1,27 @@
+<div class="modal fade" id="componentModalPop" tabindex="-1" aria-labelledby="componentModalModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Yeni Ekle</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addForm">
+                    <div class="mb-3">
+                        <label for="itemName" class="form-label">Parça Adı</label>
+                        <input type="text" class="form-control" id="itemName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="itemDescription" class="form-label">Bağlı Takım</label>
+                        <select id="teamType"></select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="closeButton">Kapat</button>
+                <button type="button" class="btn btn-primary" id="saveButton">Kaydet</button>
+            </div>
+        </div>
+    </div>
+</div>

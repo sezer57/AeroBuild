@@ -1,0 +1,27 @@
+<div class="modal fade" id="aeroModalPop" tabindex="-1" aria-labelledby="aeroModalModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Yeni Ekle</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addForm">
+                    <div class="mb-3">
+                        <label for="aeroName" class="form-label">Uçak Adı</label>
+                        <input type="text" class="form-control" id="aeroName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Bileşen Seçin</label>
+                        <div id="componentCheckboxes">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="closeButton">Kapat</button>
+                <button type="button" class="btn btn-primary" id="saveButton">Kaydet</button>
+            </div>
+        </div>
+    </div>
+</div>
