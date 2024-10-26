@@ -1,14 +1,23 @@
 services:
   backend:
     build:
-      context: ./backend
+      context: ./backend/AeroBuildAPI/
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
     volumes:
-      - ./backend:/app
+      - ./backend/AeroBuildAPI:/app
+    env_file:
+      - .env
     depends_on:
-      - db
+      - postgres_db
+    command: >
+      sh -c "
+        sleep 15 &&
+      python manage.py migrate --no-input &&
+      python manage.py makemigrations --no-input &&
+      python manage.py runserver 0.0.0.0:8000
+      "
 
   frontend:
     build:
@@ -19,14 +28,12 @@ services:
     volumes:
       - ./frontend:/app
 
-  db:
+  postgres_db:
     image: postgres
     environment:
-      POSTGRES_USER:
-      POSTGRES_PASSWORD:
-      POSTGRES_DB:
-    volumes:
-      - db_data:/var/lib/postgresql/data
+      - POSTGRES_DB=${SQL_NAME}
+      - POSTGRES_USER=${SQL_USER}
+      - POSTGRES_PASSWORD=${SQL_PASSWORD}
 
 volumes:
   db_data:

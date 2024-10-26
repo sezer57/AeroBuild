@@ -1,17 +1,15 @@
 FROM python:3.9
 
-
 WORKDIR /app
-
 
 COPY requirements.txt /app/
 RUN pip install --no-cache-dir -r requirements.txt
 
-
 COPY . /app/
 
-
 ENV PYTHONUNBUFFERED=1
+
+# Run migrations before starting the server
 
 
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
